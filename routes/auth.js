@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-const CLIENT_URL = "http://localhost:3000/";
-const LOGOUT_URL="http://localhost:3000/login"
+const CLIENT_URL = "https://serene-caramel-8a7e47.netlify.app/";
+const LOGOUT_URL="https://serene-caramel-8a7e47.netlify.app/login"
 
 router.get("/login/success", (req, res) => {
   // console.log("req->",req.user)

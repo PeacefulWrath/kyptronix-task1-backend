@@ -18,7 +18,7 @@ app.use(passport.session());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://serene-caramel-8a7e47.netlify.app",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
