@@ -5,7 +5,7 @@ const CLIENT_URL = "https://serene-caramel-8a7e47.netlify.app/";
 const LOGOUT_URL="https://serene-caramel-8a7e47.netlify.app/login"
 
 router.get("/login/success", (req, res) => {
-  // console.log("req->",req.user)
+  console.log("req->",req.user)
   if (req.user) {
     res.status(200).json({
       success: true,
@@ -34,7 +34,7 @@ router.get(
   "/google/callback",
   passport.authenticate("google", {
     successRedirect: CLIENT_URL,
-    failureRedirect: "https://krypt-task1-backend.onrender.com/auth/login/failed",
+    failureRedirect: "/login/failed",
   })
 );
 
