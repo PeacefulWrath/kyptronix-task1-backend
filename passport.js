@@ -13,7 +13,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret:process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "/auth/google/callback",
+      callbackURL: "https://krypt-task1-backend.onrender.com/auth/google/callback",
     },
     function (accessToken, refreshToken, profile, done) {
       done(null, profile);
