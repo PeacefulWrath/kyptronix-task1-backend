@@ -34,7 +34,7 @@ router.get(
   "/google/callback",
   passport.authenticate("google", {
     successRedirect: CLIENT_URL,
-    failureRedirect: "/login/failed",
+    failureRedirect: "https://krypt-task1-backend.onrender.com/login/failed",
   })
 );
 
